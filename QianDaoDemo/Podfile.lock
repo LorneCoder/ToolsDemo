@@ -1,0 +1,24 @@
+PODS:
+  - BaiduMapKit (4.1.1)
+  - Masonry (1.1.0)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - BaiduMapKit
+  - Masonry (~> 1.1.0)
+  - SVProgressHUD (~> 2.2.5)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BaiduMapKit
+    - Masonry
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  BaiduMapKit: 51bba432a28316680676b4d453a70e5031f3a7eb
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 7c6da67db33b09494f67df213351c2ccf2da0925
+
+COCOAPODS: 1.6.0.beta.1
