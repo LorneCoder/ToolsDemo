@@ -30,6 +30,8 @@
 		96A5E90F216DF39300F24E8B /* JLDateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5E90E216DF39300F24E8B /* JLDateUtil.m */; };
 		96A5E912216F271600F24E8B /* EditAddressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5E911216F271600F24E8B /* EditAddressController.m */; };
 		96A5E91C2170433800F24E8B /* AddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5E91B2170433800F24E8B /* AddressCell.m */; };
+		96FC3CFD22E98249001BB27C /* KeychainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FC3CFC22E98249001BB27C /* KeychainController.m */; };
+		96FC3D0022E982A3001BB27C /* JLKeychainTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FC3CFF22E982A3001BB27C /* JLKeychainTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,10 @@
 		96A5E917216F2E8F00F24E8B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		96A5E91A2170433800F24E8B /* AddressCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressCell.h; sourceTree = "<group>"; };
 		96A5E91B2170433800F24E8B /* AddressCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressCell.m; sourceTree = "<group>"; };
+		96FC3CFB22E98249001BB27C /* KeychainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeychainController.h; sourceTree = "<group>"; };
+		96FC3CFC22E98249001BB27C /* KeychainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeychainController.m; sourceTree = "<group>"; };
+		96FC3CFE22E982A3001BB27C /* JLKeychainTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLKeychainTool.h; sourceTree = "<group>"; };
+		96FC3CFF22E982A3001BB27C /* JLKeychainTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLKeychainTool.m; sourceTree = "<group>"; };
 		BA538513FB5D2A978AD29E23 /* Pods-QianDaoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QianDaoDemo.release.xcconfig"; path = "Target Support Files/Pods-QianDaoDemo/Pods-QianDaoDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -212,6 +218,8 @@
 			children = (
 				96A5E90D216DF39300F24E8B /* JLDateUtil.h */,
 				96A5E90E216DF39300F24E8B /* JLDateUtil.m */,
+				96FC3CFE22E982A3001BB27C /* JLKeychainTool.h */,
+				96FC3CFF22E982A3001BB27C /* JLKeychainTool.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -279,6 +287,8 @@
 				9688228F22BA312B0008C41A /* PhotoKitController.m */,
 				9626DE9E22DC303500F7E9D6 /* BLEPeripheralsController.h */,
 				9626DE9F22DC303500F7E9D6 /* BLEPeripheralsController.m */,
+				96FC3CFB22E98249001BB27C /* KeychainController.h */,
+				96FC3CFC22E98249001BB27C /* KeychainController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -479,6 +489,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96A5E912216F271600F24E8B /* EditAddressController.m in Sources */,
+				96FC3D0022E982A3001BB27C /* JLKeychainTool.m in Sources */,
 				96995A5E21D4B24800BAEC46 /* JLProgressHUD.m in Sources */,
 				9626DEA022DC303500F7E9D6 /* BLEPeripheralsController.m in Sources */,
 				96A5E8D4216C96DA00F24E8B /* ViewController.m in Sources */,
@@ -493,6 +504,7 @@
 				96A5E8D1216C96DA00F24E8B /* AppDelegate.mm in Sources */,
 				96A5E91C2170433800F24E8B /* AddressCell.m in Sources */,
 				96A5E90F216DF39300F24E8B /* JLDateUtil.m in Sources */,
+				96FC3CFD22E98249001BB27C /* KeychainController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

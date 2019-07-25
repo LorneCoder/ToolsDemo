@@ -13,6 +13,7 @@
 #import "LoadingController.h"
 #import "PhotoKitController.h"
 #import "BLEPeripheralsController.h"
+#import "KeychainController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -27,7 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.dataArray = @[@"NFC", @"蓝牙", @"Loading DIY", @"添加桌面快捷方式", @"PhotoKit", @"蓝牙外设"];
+    self.dataArray = @[@"NFC", @"蓝牙", @"Loading DIY", @"添加桌面快捷方式", @"PhotoKit", @"蓝牙外设", @"钥匙串"];
     [self initSubviews];
 }
 
@@ -113,6 +114,12 @@
         case 5:
         {//蓝牙外设
             BLEPeripheralsController * vc = [[BLEPeripheralsController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 6:
+        {//钥匙串
+            KeychainController * vc = [[KeychainController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
