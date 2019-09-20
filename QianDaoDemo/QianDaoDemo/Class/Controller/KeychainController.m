@@ -29,6 +29,13 @@
     self.deviceIdLabel.text = [JLKeychainTool UDID];
 }
 
+- (void)viewWillLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
+    self.deviceIdLabel.frame = CGRectMake(10, 100, kScreenWidth - 20, 50);
+}
+
+
 - (void)getUDID
 {
     NSString *UDID = [JLKeychainTool UDID];
@@ -47,7 +54,7 @@
 - (UILabel *)deviceIdLabel
 {
     if (!_deviceIdLabel) {
-        _deviceIdLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 100, kScreenWidth - 20, 50)];
+        _deviceIdLabel = [[UILabel alloc] init];
         _deviceIdLabel.text = @"设备ID";
         _deviceIdLabel.textColor = [UIColor blackColor];
         _deviceIdLabel.font = [UIFont systemFontOfSize:14];

@@ -13,6 +13,10 @@
 		966BCF522174390700DE9EC2 /* BluetoothController.m in Sources */ = {isa = PBXBuildFile; fileRef = 966BCF512174390700DE9EC2 /* BluetoothController.m */; };
 		9688229022BA312B0008C41A /* PhotoKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9688228F22BA312B0008C41A /* PhotoKitController.m */; };
 		968B434B2224EE1100799F16 /* BTConnectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968B434A2224EE1100799F16 /* BTConnectController.m */; };
+		968D4CAA2301725800A69A1D /* CacheWebviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D4CA92301725800A69A1D /* CacheWebviewController.m */; };
+		968D4CAD2301742700A69A1D /* NSURLProtocolCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D4CAC2301742700A69A1D /* NSURLProtocolCustom.m */; };
+		968D4CAF2302533300A69A1D /* GuidePageSource in Resources */ = {isa = PBXBuildFile; fileRef = 968D4CAE2302533300A69A1D /* GuidePageSource */; };
+		968D4CB1230291A000A69A1D /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 968D4CB0230291A000A69A1D /* test.png */; };
 		96995A5A21D4840700BAEC46 /* LoadingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96995A5921D4840700BAEC46 /* LoadingController.m */; };
 		96995A5E21D4B24800BAEC46 /* JLProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 96995A5D21D4B24800BAEC46 /* JLProgressHUD.m */; };
 		96A5E8D1216C96DA00F24E8B /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96A5E8D0216C96DA00F24E8B /* AppDelegate.mm */; };
@@ -30,6 +34,7 @@
 		96A5E90F216DF39300F24E8B /* JLDateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5E90E216DF39300F24E8B /* JLDateUtil.m */; };
 		96A5E912216F271600F24E8B /* EditAddressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5E911216F271600F24E8B /* EditAddressController.m */; };
 		96A5E91C2170433800F24E8B /* AddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5E91B2170433800F24E8B /* AddressCell.m */; };
+		96AB05592334B974004AB161 /* FaceCheckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB05582334B974004AB161 /* FaceCheckController.m */; };
 		96FC3CFD22E98249001BB27C /* KeychainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FC3CFC22E98249001BB27C /* KeychainController.m */; };
 		96FC3D0022E982A3001BB27C /* JLKeychainTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FC3CFF22E982A3001BB27C /* JLKeychainTool.m */; };
 /* End PBXBuildFile section */
@@ -64,6 +69,12 @@
 		9688228F22BA312B0008C41A /* PhotoKitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoKitController.m; sourceTree = "<group>"; };
 		968B43492224EE1100799F16 /* BTConnectController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTConnectController.h; sourceTree = "<group>"; };
 		968B434A2224EE1100799F16 /* BTConnectController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTConnectController.m; sourceTree = "<group>"; };
+		968D4CA82301725800A69A1D /* CacheWebviewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CacheWebviewController.h; sourceTree = "<group>"; };
+		968D4CA92301725800A69A1D /* CacheWebviewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CacheWebviewController.m; sourceTree = "<group>"; };
+		968D4CAB2301742700A69A1D /* NSURLProtocolCustom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NSURLProtocolCustom.h; path = QianDaoDemo/Class/Controller/NSURLProtocolCustom.h; sourceTree = SOURCE_ROOT; };
+		968D4CAC2301742700A69A1D /* NSURLProtocolCustom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NSURLProtocolCustom.m; path = QianDaoDemo/Class/Controller/NSURLProtocolCustom.m; sourceTree = SOURCE_ROOT; };
+		968D4CAE2302533300A69A1D /* GuidePageSource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GuidePageSource; sourceTree = "<group>"; };
+		968D4CB0230291A000A69A1D /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		96995A5821D4840700BAEC46 /* LoadingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingController.h; sourceTree = "<group>"; };
 		96995A5921D4840700BAEC46 /* LoadingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingController.m; sourceTree = "<group>"; };
 		96995A5C21D4B24800BAEC46 /* JLProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLProgressHUD.h; sourceTree = "<group>"; };
@@ -98,6 +109,8 @@
 		96A5E917216F2E8F00F24E8B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		96A5E91A2170433800F24E8B /* AddressCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressCell.h; sourceTree = "<group>"; };
 		96A5E91B2170433800F24E8B /* AddressCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressCell.m; sourceTree = "<group>"; };
+		96AB05572334B974004AB161 /* FaceCheckController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceCheckController.h; sourceTree = "<group>"; };
+		96AB05582334B974004AB161 /* FaceCheckController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceCheckController.m; sourceTree = "<group>"; };
 		96FC3CFB22E98249001BB27C /* KeychainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeychainController.h; sourceTree = "<group>"; };
 		96FC3CFC22E98249001BB27C /* KeychainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeychainController.m; sourceTree = "<group>"; };
 		96FC3CFE22E982A3001BB27C /* JLKeychainTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLKeychainTool.h; sourceTree = "<group>"; };
@@ -185,6 +198,7 @@
 		96A5E8CE216C96DA00F24E8B /* QianDaoDemo */ = {
 			isa = PBXGroup;
 			children = (
+				968D4CAE2302533300A69A1D /* GuidePageSource */,
 				96A5E916216F2DA300F24E8B /* Other */,
 				96A5E915216F2D8400F24E8B /* Main */,
 				96A5E914216F2D4100F24E8B /* Class */,
@@ -289,6 +303,10 @@
 				9626DE9F22DC303500F7E9D6 /* BLEPeripheralsController.m */,
 				96FC3CFB22E98249001BB27C /* KeychainController.h */,
 				96FC3CFC22E98249001BB27C /* KeychainController.m */,
+				968D4CA82301725800A69A1D /* CacheWebviewController.h */,
+				968D4CA92301725800A69A1D /* CacheWebviewController.m */,
+				96AB05572334B974004AB161 /* FaceCheckController.h */,
+				96AB05582334B974004AB161 /* FaceCheckController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -296,6 +314,9 @@
 		96DCE11021A6C96E00D69E95 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				968D4CB0230291A000A69A1D /* test.png */,
+				968D4CAB2301742700A69A1D /* NSURLProtocolCustom.h */,
+				968D4CAC2301742700A69A1D /* NSURLProtocolCustom.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -421,8 +442,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				96A5E8DC216C96DC00F24E8B /* LaunchScreen.storyboard in Resources */,
+				968D4CB1230291A000A69A1D /* test.png in Resources */,
 				96A5E8D9216C96DC00F24E8B /* Assets.xcassets in Resources */,
 				96A5E8D7216C96DA00F24E8B /* Main.storyboard in Resources */,
+				968D4CAF2302533300A69A1D /* GuidePageSource in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,11 +520,14 @@
 				96995A5A21D4840700BAEC46 /* LoadingController.m in Sources */,
 				966BCF522174390700DE9EC2 /* BluetoothController.m in Sources */,
 				96A5E903216C98AC00F24E8B /* SignInController.m in Sources */,
+				968D4CAD2301742700A69A1D /* NSURLProtocolCustom.m in Sources */,
 				9688229022BA312B0008C41A /* PhotoKitController.m in Sources */,
 				96A5E8DF216C96DC00F24E8B /* main.m in Sources */,
 				96A5E907216DA03500F24E8B /* NFCController.m in Sources */,
+				96AB05592334B974004AB161 /* FaceCheckController.m in Sources */,
 				968B434B2224EE1100799F16 /* BTConnectController.m in Sources */,
 				96A5E8D1216C96DA00F24E8B /* AppDelegate.mm in Sources */,
+				968D4CAA2301725800A69A1D /* CacheWebviewController.m in Sources */,
 				96A5E91C2170433800F24E8B /* AddressCell.m in Sources */,
 				96A5E90F216DF39300F24E8B /* JLDateUtil.m in Sources */,
 				96FC3CFD22E98249001BB27C /* KeychainController.m in Sources */,
@@ -675,8 +701,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = QianDaoDemo/Other/QianDaoDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5K6BVZR5Q7;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/QianDaoDemo/Main/PrefixHeader.pch";
 				INFOPLIST_FILE = QianDaoDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -702,8 +730,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = QianDaoDemo/Other/QianDaoDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5K6BVZR5Q7;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/QianDaoDemo/Main/PrefixHeader.pch";
 				INFOPLIST_FILE = QianDaoDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

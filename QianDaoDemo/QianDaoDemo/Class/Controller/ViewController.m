@@ -14,6 +14,8 @@
 #import "PhotoKitController.h"
 #import "BLEPeripheralsController.h"
 #import "KeychainController.h"
+#import "CacheWebviewController.h"
+#import "FaceCheckController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -28,7 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.dataArray = @[@"NFC", @"蓝牙", @"Loading DIY", @"添加桌面快捷方式", @"PhotoKit", @"蓝牙外设", @"钥匙串"];
+    self.dataArray = @[@"NFC", @"蓝牙", @"Loading DIY", @"添加桌面快捷方式", @"PhotoKit", @"蓝牙外设", @"钥匙串", @"远程H5加载本地资源", @"人脸检测"];
     [self initSubviews];
 }
 
@@ -123,7 +125,18 @@
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
-
+        case 7:
+        {//远程H5加载本地资源
+            CacheWebviewController * vc = [[CacheWebviewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 8:
+        {//人脸检测
+            FaceCheckController * vc = [[FaceCheckController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
         default:
             break;
     }

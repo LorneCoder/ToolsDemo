@@ -80,9 +80,9 @@
     [self loadData];
 }
 
-- (void)viewDidLayoutSubviews
+- (void)viewWillLayoutSubviews
 {
-    [super viewDidLayoutSubviews];
+    [super viewWillLayoutSubviews];
     self.dateLabel.frame = CGRectMake(0, 64, kScreenWidth, 60);
     
     UIView *line = [self.view viewWithTag:10001];
@@ -91,6 +91,7 @@
     self.addressLabel.frame = CGRectMake(10, CGRectGetMaxY(line.frame), kScreenWidth - 20 - 0, 40);
     //self.editBtn.frame = CGRectMake(CGRectGetMaxX(self.addressLabel.frame), CGRectGetMinY(self.addressLabel.frame), 80, 40);
     self.mapContainer.frame = CGRectMake(0, CGRectGetMaxY(self.addressLabel.frame), kScreenWidth, 200);
+    _mapView.frame = CGRectMake(0, 0, kScreenWidth, 200);
     
     UIView *signBottomView = [self.view viewWithTag:10002];
     CGFloat signBottomView_Y = CGRectGetMaxY(self.mapContainer.frame);
