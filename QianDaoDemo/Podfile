@@ -5,5 +5,6 @@ target 'QianDaoDemo' do
   pod 'BaiduMapKit' #百度地图SDK
   pod 'Masonry', '~> 1.1.0'
   pod 'SVProgressHUD', '~> 2.2.5'
-
+  pod 'lottie-ios'  #动画库
+  
 end
