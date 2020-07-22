@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "CYNTabBarController.h"
 #import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
 
 @interface AppDelegate ()
@@ -22,10 +22,10 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    ViewController *vc = [[ViewController alloc] init];
-    UINavigationController *navigaC = [[UINavigationController alloc] initWithRootViewController:vc];
-    self.window.rootViewController = navigaC;
     
+    CYNTabBarController *tabController = [[CYNTabBarController alloc] init];
+    self.window.rootViewController = tabController;
+        
     [self configBaiDuMap];
     [SVProgressHUD setMinimumDismissTimeInterval:1.5f];
     

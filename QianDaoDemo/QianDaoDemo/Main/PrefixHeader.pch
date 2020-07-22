@@ -13,7 +13,6 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 
-
 #define kScreenWidth     [[UIScreen mainScreen] bounds].size.width
 #define kScreenHeight    [[UIScreen mainScreen] bounds].size.height
 #define RGBA(r,g,b,a)         [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
@@ -21,8 +20,22 @@
 
 #define kInfoImage     [UIImage imageNamed:@"info"]
 
+#define kNavigationBarHeight    (kIS_iPhoneX ? 88 : 64)
+#define kTabBarHeight           (kIS_iPhoneX ? 83 : 49)
+#define kBottomSafeAreaHeight   (kIS_iPhoneX ? 34 : 0)
+
+#define kIS_iPhoneX \
+({BOOL isPhoneX = NO;\
+if (@available(iOS 11.0, *)) {\
+isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom > 0.0;\
+}\
+(isPhoneX);})
+
+
 
 #import "SVProgressHUD.h"
 #import "Masonry.h"
+#import "JLDataConvertUtil.h"
+#import "UIColor+Extension.h"
 
 #endif /* PrefixHeader_pch */
