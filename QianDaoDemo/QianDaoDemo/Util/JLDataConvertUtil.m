@@ -26,7 +26,25 @@
     return data;
 }
 
-///data转换uint8_t
+/// NSData转16进制字符串
++ (NSString *)hexStringWithData:(NSData *)data
+{
+    Byte *bytes = (Byte *)[data bytes];
+    NSString *hexStr = @"";
+    for(int i = 0; i < [data length]; i++) {
+        NSString *newHexStr = [NSString stringWithFormat:@"%x", bytes[i]&0xff]; //16进制数
+        
+        if([newHexStr length] == 1) {
+            hexStr = [NSString stringWithFormat:@"%@0%@", hexStr, newHexStr];
+        } else {
+            hexStr = [NSString stringWithFormat:@"%@%@", hexStr, newHexStr];
+        }
+    }
+    hexStr = [hexStr uppercaseString];
+    return hexStr;
+}
+
+///NSData转换uint8_t
 + (uint8_t)uint8FromBytes:(NSData *)fData
 {
     NSAssert(fData.length == 1, @"uint8FromBytes: (data length != 1)");

@@ -48,6 +48,7 @@
 		96E3C2F9237E9260004567B8 /* AppDelegate+Visible.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E3C2F8237E9260004567B8 /* AppDelegate+Visible.m */; };
 		96E3C2FC237E9694004567B8 /* CYNPrizeResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E3C2FB237E9694004567B8 /* CYNPrizeResultController.m */; };
 		96F88F1124C68F260065CB3C /* BLEClockInController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F88F1024C68F260065CB3C /* BLEClockInController.m */; };
+		96F88F1424C838120065CB3C /* AnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F88F1324C838120065CB3C /* AnimationController.m */; };
 		96FC3CFD22E98249001BB27C /* KeychainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FC3CFC22E98249001BB27C /* KeychainController.m */; };
 		96FC3D0022E982A3001BB27C /* JLKeychainTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FC3CFF22E982A3001BB27C /* JLKeychainTool.m */; };
 /* End PBXBuildFile section */
@@ -149,6 +150,8 @@
 		96E3C2FB237E9694004567B8 /* CYNPrizeResultController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYNPrizeResultController.m; sourceTree = "<group>"; };
 		96F88F0F24C68F260065CB3C /* BLEClockInController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLEClockInController.h; sourceTree = "<group>"; };
 		96F88F1024C68F260065CB3C /* BLEClockInController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLEClockInController.m; sourceTree = "<group>"; };
+		96F88F1224C838120065CB3C /* AnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationController.h; sourceTree = "<group>"; };
+		96F88F1324C838120065CB3C /* AnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationController.m; sourceTree = "<group>"; };
 		96FC3CFB22E98249001BB27C /* KeychainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeychainController.h; sourceTree = "<group>"; };
 		96FC3CFC22E98249001BB27C /* KeychainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeychainController.m; sourceTree = "<group>"; };
 		96FC3CFE22E982A3001BB27C /* JLKeychainTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLKeychainTool.h; sourceTree = "<group>"; };
@@ -397,6 +400,8 @@
 				96E3C2FB237E9694004567B8 /* CYNPrizeResultController.m */,
 				96F88F0F24C68F260065CB3C /* BLEClockInController.h */,
 				96F88F1024C68F260065CB3C /* BLEClockInController.m */,
+				96F88F1224C838120065CB3C /* AnimationController.h */,
+				96F88F1324C838120065CB3C /* AnimationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -616,6 +621,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96A5E912216F271600F24E8B /* EditAddressController.m in Sources */,
+				96F88F1424C838120065CB3C /* AnimationController.m in Sources */,
 				96FC3D0022E982A3001BB27C /* JLKeychainTool.m in Sources */,
 				96995A5E21D4B24800BAEC46 /* JLProgressHUD.m in Sources */,
 				9626DEA022DC303500F7E9D6 /* BLEPeripheralsController.m in Sources */,

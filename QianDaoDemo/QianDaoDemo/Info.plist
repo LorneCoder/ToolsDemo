@@ -35,6 +35,8 @@
 	<string>请求使用位置服务</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>请求使用相册</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>请求使用蓝牙</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>loveway.ttf</string>

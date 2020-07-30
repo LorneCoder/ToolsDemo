@@ -19,6 +19,7 @@
 #import "BLEPrinterController.h"
 #import "FontSetController.h"
 #import "BLEClockInController.h"
+#import "AnimationController.h"
 #import "CYNTopView.h"
 #import "AppDelegate.h"
 
@@ -48,7 +49,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.dataArray = @[@"NFC", @"蓝牙", @"Loading DIY", @"添加桌面快捷方式", @"PhotoKit", @"蓝牙外设", @"钥匙串", @"远程H5加载本地资源", @"人脸检测", @"蓝牙打印机", @"字体设置", @"蓝牙门禁"];
+    self.dataArray = @[@"NFC", @"蓝牙", @"Loading DIY", @"添加桌面快捷方式", @"PhotoKit", @"蓝牙外设", @"钥匙串", @"远程H5加载本地资源", @"人脸检测", @"蓝牙打印机", @"字体设置", @"蓝牙门禁", @"动画效果"];
     [self initSubviews];
 }
 
@@ -168,11 +169,18 @@
             break;
         }
         case 11:
-       {//蓝牙门禁
+        {//蓝牙门禁
            BLEClockInController * vc = [[BLEClockInController alloc] init];
            [self.navigationController pushViewController:vc animated:YES];
            break;
-       }
+        }
+        case 12:
+        {//动画效果
+           AnimationController * vc = [[AnimationController alloc] init];
+           [self.navigationController pushViewController:vc animated:YES];
+           break;
+        }
+            
         default:
             break;
     }

@@ -1,24 +1,28 @@
 PODS:
   - BaiduMapKit (4.1.1)
+  - lottie-ios (2.5.0)
   - Masonry (1.1.0)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - BaiduMapKit
+  - lottie-ios
   - Masonry (~> 1.1.0)
   - SVProgressHUD (~> 2.2.5)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - BaiduMapKit
+    - lottie-ios
     - Masonry
     - SVProgressHUD
 
 SPEC CHECKSUMS:
   BaiduMapKit: 51bba432a28316680676b4d453a70e5031f3a7eb
+  lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 7c6da67db33b09494f67df213351c2ccf2da0925
+PODFILE CHECKSUM: c8c9394d67354e47459b33f41a43c8764567fbd0
 
 COCOAPODS: 1.6.0.beta.1
