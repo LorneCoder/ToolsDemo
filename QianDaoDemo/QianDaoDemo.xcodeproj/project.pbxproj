@@ -13,12 +13,58 @@
 		9626DEA022DC303500F7E9D6 /* BLEPeripheralsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9626DE9F22DC303500F7E9D6 /* BLEPeripheralsController.m */; };
 		9648D99324A1A45200A668E0 /* UIView+Subviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 9648D99224A1A45200A668E0 /* UIView+Subviews.m */; };
 		966BCF522174390700DE9EC2 /* BluetoothController.m in Sources */ = {isa = PBXBuildFile; fileRef = 966BCF512174390700DE9EC2 /* BluetoothController.m */; };
+		9670301724E519BF0039D3D7 /* PayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9670301624E519BF0039D3D7 /* PayController.m */; };
+		967BEFC4256E5F86007E4B4D /* JLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 967BEFC2256E5F85007E4B4D /* JLAlertView.m */; };
+		967BEFC9256E72B9007E4B4D /* JLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 967BEFC2256E5F85007E4B4D /* JLAlertView.m */; };
 		9688229022BA312B0008C41A /* PhotoKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9688228F22BA312B0008C41A /* PhotoKitController.m */; };
 		968B434B2224EE1100799F16 /* BTConnectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968B434A2224EE1100799F16 /* BTConnectController.m */; };
 		968D4CAA2301725800A69A1D /* CacheWebviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D4CA92301725800A69A1D /* CacheWebviewController.m */; };
 		968D4CAD2301742700A69A1D /* NSURLProtocolCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D4CAC2301742700A69A1D /* NSURLProtocolCustom.m */; };
 		968D4CAF2302533300A69A1D /* GuidePageSource in Resources */ = {isa = PBXBuildFile; fileRef = 968D4CAE2302533300A69A1D /* GuidePageSource */; };
 		968D4CB1230291A000A69A1D /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 968D4CB0230291A000A69A1D /* test.png */; };
+		96915AC3256E0A1700A4F0FF /* EditAddressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5E911216F271600F24E8B /* EditAddressController.m */; };
+		96915AC4256E0A1700A4F0FF /* AnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F88F1324C838120065CB3C /* AnimationController.m */; };
+		96915AC5256E0A1700A4F0FF /* JLKeychainTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FC3CFF22E982A3001BB27C /* JLKeychainTool.m */; };
+		96915AC6256E0A1700A4F0FF /* JLProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 96995A5D21D4B24800BAEC46 /* JLProgressHUD.m */; };
+		96915AC7256E0A1700A4F0FF /* BLEPeripheralsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9626DE9F22DC303500F7E9D6 /* BLEPeripheralsController.m */; };
+		96915AC8256E0A1700A4F0FF /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E3C2ED237CF0C6004567B8 /* UIColor+Extension.m */; };
+		96915AC9256E0A1700A4F0FF /* CYNTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E3C2E7237CEF48004567B8 /* CYNTabBarController.m */; };
+		96915ACA256E0A1700A4F0FF /* CYNNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E3C2E5237CEF48004567B8 /* CYNNavigationController.m */; };
+		96915ACB256E0A1700A4F0FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5E8D3216C96DA00F24E8B /* ViewController.m */; };
+		96915ACC256E0A1700A4F0FF /* CYNTopGifView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E3C2F5237D017B004567B8 /* CYNTopGifView.m */; };
+		96915ACD256E0A1700A4F0FF /* BLEPrinterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 961BCE5C2355AFB100E956E6 /* BLEPrinterController.m */; };
+		96915ACE256E0A1700A4F0FF /* TTAlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 961FFD2122C0BA2800615C39 /* TTAlbumModel.m */; };
+		96915ACF256E0A1700A4F0FF /* BLEClockInController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F88F1024C68F260065CB3C /* BLEClockInController.m */; };
+		96915AD0256E0A1700A4F0FF /* LoadingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96995A5921D4840700BAEC46 /* LoadingController.m */; };
+		96915AD1256E0A1700A4F0FF /* BluetoothController.m in Sources */ = {isa = PBXBuildFile; fileRef = 966BCF512174390700DE9EC2 /* BluetoothController.m */; };
+		96915AD2256E0A1700A4F0FF /* SignInController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5E902216C98AC00F24E8B /* SignInController.m */; };
+		96915AD3256E0A1700A4F0FF /* CYNPrizeResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E3C2FB237E9694004567B8 /* CYNPrizeResultController.m */; };
+		96915AD4256E0A1700A4F0FF /* NSURLProtocolCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D4CAC2301742700A69A1D /* NSURLProtocolCustom.m */; };
+		96915AD5256E0A1700A4F0FF /* FontSetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E3C2DC237A550E004567B8 /* FontSetController.m */; };
+		96915AD6256E0A1700A4F0FF /* PhotoKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9688228F22BA312B0008C41A /* PhotoKitController.m */; };
+		96915AD7256E0A1700A4F0FF /* UIView+Subviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 9648D99224A1A45200A668E0 /* UIView+Subviews.m */; };
+		96915AD8256E0A1700A4F0FF /* AppDelegate+Visible.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E3C2F8237E9260004567B8 /* AppDelegate+Visible.m */; };
+		96915AD9256E0A1700A4F0FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5E8DE216C96DC00F24E8B /* main.m */; };
+		96915ADA256E0A1700A4F0FF /* JLDataConvertUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E2E38323580845003F1013 /* JLDataConvertUtil.m */; };
+		96915ADB256E0A1700A4F0FF /* CYNTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E3C2E1237CEA6A004567B8 /* CYNTopView.m */; };
+		96915ADC256E0A1700A4F0FF /* NFCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5E906216DA03500F24E8B /* NFCController.m */; };
+		96915ADD256E0A1700A4F0FF /* FaceCheckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AB05582334B974004AB161 /* FaceCheckController.m */; };
+		96915ADE256E0A1700A4F0FF /* BTConnectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968B434A2224EE1100799F16 /* BTConnectController.m */; };
+		96915ADF256E0A1700A4F0FF /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96A5E8D0216C96DA00F24E8B /* AppDelegate.mm */; };
+		96915AE0256E0A1700A4F0FF /* CacheWebviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D4CA92301725800A69A1D /* CacheWebviewController.m */; };
+		96915AE1256E0A1700A4F0FF /* AddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5E91B2170433800F24E8B /* AddressCell.m */; };
+		96915AE2256E0A1700A4F0FF /* JLDateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5E90E216DF39300F24E8B /* JLDateUtil.m */; };
+		96915AE3256E0A1700A4F0FF /* PayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9670301624E519BF0039D3D7 /* PayController.m */; };
+		96915AE4256E0A1700A4F0FF /* KeychainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FC3CFC22E98249001BB27C /* KeychainController.m */; };
+		96915AE6256E0A1700A4F0FF /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A5E908216DEB1500F24E8B /* libssl.a */; };
+		96915AE7256E0A1700A4F0FF /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A5E909216DEB1500F24E8B /* libcrypto.a */; };
+		96915AE8256E0A1700A4F0FF /* libPods-QianDaoDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA94CD4E3E8C4D19AF25221 /* libPods-QianDaoDemo.a */; };
+		96915AEA256E0A1700A4F0FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A5E8DA216C96DC00F24E8B /* LaunchScreen.storyboard */; };
+		96915AEB256E0A1700A4F0FF /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 968D4CB0230291A000A69A1D /* test.png */; };
+		96915AEC256E0A1700A4F0FF /* loveway.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E3C2DE237A9F42004567B8 /* loveway.ttf */; };
+		96915AED256E0A1700A4F0FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A5E8D8216C96DC00F24E8B /* Assets.xcassets */; };
+		96915AEE256E0A1700A4F0FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A5E8D5216C96DA00F24E8B /* Main.storyboard */; };
+		96915AEF256E0A1700A4F0FF /* GuidePageSource in Resources */ = {isa = PBXBuildFile; fileRef = 968D4CAE2302533300A69A1D /* GuidePageSource */; };
 		96995A5A21D4840700BAEC46 /* LoadingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96995A5921D4840700BAEC46 /* LoadingController.m */; };
 		96995A5E21D4B24800BAEC46 /* JLProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 96995A5D21D4B24800BAEC46 /* JLProgressHUD.m */; };
 		96A5E8D1216C96DA00F24E8B /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96A5E8D0216C96DA00F24E8B /* AppDelegate.mm */; };
@@ -83,6 +129,10 @@
 		9648D99224A1A45200A668E0 /* UIView+Subviews.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Subviews.m"; sourceTree = "<group>"; };
 		966BCF502174390700DE9EC2 /* BluetoothController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BluetoothController.h; sourceTree = "<group>"; };
 		966BCF512174390700DE9EC2 /* BluetoothController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BluetoothController.m; sourceTree = "<group>"; };
+		9670301524E519BF0039D3D7 /* PayController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayController.h; sourceTree = "<group>"; };
+		9670301624E519BF0039D3D7 /* PayController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayController.m; sourceTree = "<group>"; };
+		967BEFC2256E5F85007E4B4D /* JLAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLAlertView.m; sourceTree = "<group>"; };
+		967BEFC3256E5F86007E4B4D /* JLAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLAlertView.h; sourceTree = "<group>"; };
 		9688228E22BA312B0008C41A /* PhotoKitController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoKitController.h; sourceTree = "<group>"; };
 		9688228F22BA312B0008C41A /* PhotoKitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoKitController.m; sourceTree = "<group>"; };
 		968B43492224EE1100799F16 /* BTConnectController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTConnectController.h; sourceTree = "<group>"; };
@@ -93,6 +143,8 @@
 		968D4CAC2301742700A69A1D /* NSURLProtocolCustom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NSURLProtocolCustom.m; path = QianDaoDemo/Class/Controller/NSURLProtocolCustom.m; sourceTree = SOURCE_ROOT; };
 		968D4CAE2302533300A69A1D /* GuidePageSource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GuidePageSource; sourceTree = "<group>"; };
 		968D4CB0230291A000A69A1D /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		96915AF4256E0A1700A4F0FF /* QianDaoDemo_dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QianDaoDemo_dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96915AFD256E0A9F00A4F0FF /* QiaoDaoDemo_dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "QiaoDaoDemo_dev-Info.plist"; path = "/Users/gaojianlong/Desktop/ToolsDemo/QianDaoDemo/QiaoDaoDemo_dev-Info.plist"; sourceTree = "<absolute>"; };
 		96995A5821D4840700BAEC46 /* LoadingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingController.h; sourceTree = "<group>"; };
 		96995A5921D4840700BAEC46 /* LoadingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingController.m; sourceTree = "<group>"; };
 		96995A5C21D4B24800BAEC46 /* JLProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLProgressHUD.h; sourceTree = "<group>"; };
@@ -160,6 +212,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		96915AE5256E0A1700A4F0FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96915AE6256E0A1700A4F0FF /* libssl.a in Frameworks */,
+				96915AE7256E0A1700A4F0FF /* libcrypto.a in Frameworks */,
+				96915AE8256E0A1700A4F0FF /* libPods-QianDaoDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		96A5E8C9216C96DA00F24E8B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -196,6 +258,48 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		96915A90256E025000A4F0FF /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				96915A91256E027500A4F0FF /* View */,
+				96DCE11021A6C96E00D69E95 /* Tools */,
+				96A5E90C216DF36100F24E8B /* Util */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		96915A91256E027500A4F0FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				967BEFC3256E5F86007E4B4D /* JLAlertView.h */,
+				967BEFC2256E5F85007E4B4D /* JLAlertView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96915AAB256E05F500A4F0FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96915AFD256E0A9F00A4F0FF /* QiaoDaoDemo_dev-Info.plist */,
+				96A5E8D5216C96DA00F24E8B /* Main.storyboard */,
+				96A5E8D8216C96DC00F24E8B /* Assets.xcassets */,
+				96A5E8DA216C96DC00F24E8B /* LaunchScreen.storyboard */,
+				96A5E904216D9DB300F24E8B /* QianDaoDemo.entitlements */,
+				96A5E8DD216C96DC00F24E8B /* Info.plist */,
+				96A5E8DE216C96DC00F24E8B /* main.m */,
+				96E3C2DE237A9F42004567B8 /* loveway.ttf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96915AB9256E070100A4F0FF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				968D4CAE2302533300A69A1D /* GuidePageSource */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		96995A5B21D484E800BAEC46 /* JLProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +327,7 @@
 				96A5E8CC216C96DA00F24E8B /* QianDaoDemo.app */,
 				96A5E8E4216C96DC00F24E8B /* QianDaoDemoTests.xctest */,
 				96A5E8EF216C96DC00F24E8B /* QianDaoDemoUITests.xctest */,
+				96915AF4256E0A1700A4F0FF /* QianDaoDemo_dev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,15 +335,9 @@
 		96A5E8CE216C96DA00F24E8B /* QianDaoDemo */ = {
 			isa = PBXGroup;
 			children = (
-				96DCE11021A6C96E00D69E95 /* Tools */,
-				96E3C2EA237CF02E004567B8 /* Expand */,
-				96A5E916216F2DA300F24E8B /* Other */,
-				96A5E915216F2D8400F24E8B /* Main */,
 				96A5E914216F2D4100F24E8B /* Class */,
-				96A5E90C216DF36100F24E8B /* Util */,
-				96E3C2EC237CF06C004567B8 /* Supporting Files */,
-				968D4CAE2302533300A69A1D /* GuidePageSource */,
-				96A5E8DD216C96DC00F24E8B /* Info.plist */,
+				96915AB9256E070100A4F0FF /* Resource */,
+				96915AAB256E05F500A4F0FF /* Supporting Files */,
 			);
 			path = QianDaoDemo;
 			sourceTree = "<group>";
@@ -277,6 +376,9 @@
 		96A5E914216F2D4100F24E8B /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				96E3C2EA237CF02E004567B8 /* Expand */,
+				96915A90256E025000A4F0FF /* Public */,
+				96A5E915216F2D8400F24E8B /* Main */,
 				96E3C2E3237CEF06004567B8 /* Root */,
 				96E3C2F0237CF435004567B8 /* TabHome */,
 			);
@@ -291,17 +393,6 @@
 				96A5E917216F2E8F00F24E8B /* PrefixHeader.pch */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		96A5E916216F2DA300F24E8B /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				96A5E904216D9DB300F24E8B /* QianDaoDemo.entitlements */,
-				96A5E8D5216C96DA00F24E8B /* Main.storyboard */,
-				96A5E8D8216C96DC00F24E8B /* Assets.xcassets */,
-				96A5E8DA216C96DC00F24E8B /* LaunchScreen.storyboard */,
-			);
-			path = Other;
 			sourceTree = "<group>";
 		};
 		96DCE11021A6C96E00D69E95 /* Tools */ = {
@@ -344,15 +435,6 @@
 				9648D99224A1A45200A668E0 /* UIView+Subviews.m */,
 			);
 			path = Category;
-			sourceTree = "<group>";
-		};
-		96E3C2EC237CF06C004567B8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				96A5E8DE216C96DC00F24E8B /* main.m */,
-				96E3C2DE237A9F42004567B8 /* loveway.ttf */,
-			);
-			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		96E3C2F0237CF435004567B8 /* TabHome */ = {
@@ -402,6 +484,8 @@
 				96F88F1024C68F260065CB3C /* BLEClockInController.m */,
 				96F88F1224C838120065CB3C /* AnimationController.h */,
 				96F88F1324C838120065CB3C /* AnimationController.m */,
+				9670301524E519BF0039D3D7 /* PayController.h */,
+				9670301624E519BF0039D3D7 /* PayController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -442,6 +526,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		96915AC0256E0A1700A4F0FF /* QianDaoDemo_dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96915AF1256E0A1700A4F0FF /* Build configuration list for PBXNativeTarget "QianDaoDemo_dev" */;
+			buildPhases = (
+				96915AC1256E0A1700A4F0FF /* [CP] Check Pods Manifest.lock */,
+				96915AC2256E0A1700A4F0FF /* Sources */,
+				96915AE5256E0A1700A4F0FF /* Frameworks */,
+				96915AE9256E0A1700A4F0FF /* Resources */,
+				96915AF0256E0A1700A4F0FF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QianDaoDemo_dev;
+			productName = QianDaoDemo;
+			productReference = 96915AF4256E0A1700A4F0FF /* QianDaoDemo_dev.app */;
+			productType = "com.apple.product-type.application";
+		};
 		96A5E8CB216C96DA00F24E8B /* QianDaoDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96A5E8F8216C96DC00F24E8B /* Build configuration list for PBXNativeTarget "QianDaoDemo" */;
@@ -540,11 +643,25 @@
 				96A5E8CB216C96DA00F24E8B /* QianDaoDemo */,
 				96A5E8E3216C96DC00F24E8B /* QianDaoDemoTests */,
 				96A5E8EE216C96DC00F24E8B /* QianDaoDemoUITests */,
+				96915AC0256E0A1700A4F0FF /* QianDaoDemo_dev */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		96915AE9256E0A1700A4F0FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96915AEA256E0A1700A4F0FF /* LaunchScreen.storyboard in Resources */,
+				96915AEB256E0A1700A4F0FF /* test.png in Resources */,
+				96915AEC256E0A1700A4F0FF /* loveway.ttf in Resources */,
+				96915AED256E0A1700A4F0FF /* Assets.xcassets in Resources */,
+				96915AEE256E0A1700A4F0FF /* Main.storyboard in Resources */,
+				96915AEF256E0A1700A4F0FF /* GuidePageSource in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		96A5E8CA216C96DA00F24E8B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -595,6 +712,44 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QianDaoDemo/Pods-QianDaoDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		96915AC1256E0A1700A4F0FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QianDaoDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96915AF0256E0A1700A4F0FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QianDaoDemo/Pods-QianDaoDemo-resources.sh",
+				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mapapi.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QianDaoDemo/Pods-QianDaoDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FE041A26A17283D67C3608D0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -616,6 +771,48 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		96915AC2256E0A1700A4F0FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				967BEFC9256E72B9007E4B4D /* JLAlertView.m in Sources */,
+				96915AC3256E0A1700A4F0FF /* EditAddressController.m in Sources */,
+				96915AC4256E0A1700A4F0FF /* AnimationController.m in Sources */,
+				96915AC5256E0A1700A4F0FF /* JLKeychainTool.m in Sources */,
+				96915AC6256E0A1700A4F0FF /* JLProgressHUD.m in Sources */,
+				96915AC7256E0A1700A4F0FF /* BLEPeripheralsController.m in Sources */,
+				96915AC8256E0A1700A4F0FF /* UIColor+Extension.m in Sources */,
+				96915AC9256E0A1700A4F0FF /* CYNTabBarController.m in Sources */,
+				96915ACA256E0A1700A4F0FF /* CYNNavigationController.m in Sources */,
+				96915ACB256E0A1700A4F0FF /* ViewController.m in Sources */,
+				96915ACC256E0A1700A4F0FF /* CYNTopGifView.m in Sources */,
+				96915ACD256E0A1700A4F0FF /* BLEPrinterController.m in Sources */,
+				96915ACE256E0A1700A4F0FF /* TTAlbumModel.m in Sources */,
+				96915ACF256E0A1700A4F0FF /* BLEClockInController.m in Sources */,
+				96915AD0256E0A1700A4F0FF /* LoadingController.m in Sources */,
+				96915AD1256E0A1700A4F0FF /* BluetoothController.m in Sources */,
+				96915AD2256E0A1700A4F0FF /* SignInController.m in Sources */,
+				96915AD3256E0A1700A4F0FF /* CYNPrizeResultController.m in Sources */,
+				96915AD4256E0A1700A4F0FF /* NSURLProtocolCustom.m in Sources */,
+				96915AD5256E0A1700A4F0FF /* FontSetController.m in Sources */,
+				96915AD6256E0A1700A4F0FF /* PhotoKitController.m in Sources */,
+				96915AD7256E0A1700A4F0FF /* UIView+Subviews.m in Sources */,
+				96915AD8256E0A1700A4F0FF /* AppDelegate+Visible.m in Sources */,
+				96915AD9256E0A1700A4F0FF /* main.m in Sources */,
+				96915ADA256E0A1700A4F0FF /* JLDataConvertUtil.m in Sources */,
+				96915ADB256E0A1700A4F0FF /* CYNTopView.m in Sources */,
+				96915ADC256E0A1700A4F0FF /* NFCController.m in Sources */,
+				96915ADD256E0A1700A4F0FF /* FaceCheckController.m in Sources */,
+				96915ADE256E0A1700A4F0FF /* BTConnectController.m in Sources */,
+				96915ADF256E0A1700A4F0FF /* AppDelegate.mm in Sources */,
+				96915AE0256E0A1700A4F0FF /* CacheWebviewController.m in Sources */,
+				96915AE1256E0A1700A4F0FF /* AddressCell.m in Sources */,
+				96915AE2256E0A1700A4F0FF /* JLDateUtil.m in Sources */,
+				96915AE3256E0A1700A4F0FF /* PayController.m in Sources */,
+				96915AE4256E0A1700A4F0FF /* KeychainController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		96A5E8C8216C96DA00F24E8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -649,9 +846,11 @@
 				96AB05592334B974004AB161 /* FaceCheckController.m in Sources */,
 				968B434B2224EE1100799F16 /* BTConnectController.m in Sources */,
 				96A5E8D1216C96DA00F24E8B /* AppDelegate.mm in Sources */,
+				967BEFC4256E5F86007E4B4D /* JLAlertView.m in Sources */,
 				968D4CAA2301725800A69A1D /* CacheWebviewController.m in Sources */,
 				96A5E91C2170433800F24E8B /* AddressCell.m in Sources */,
 				96A5E90F216DF39300F24E8B /* JLDateUtil.m in Sources */,
+				9670301724E519BF0039D3D7 /* PayController.m in Sources */,
 				96FC3CFD22E98249001BB27C /* KeychainController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -707,6 +906,74 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		96915AF2256E0A1700A4F0FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 543D9083BE25421773652AB6 /* Pods-QianDaoDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QianDaoDemo/QianDaoDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5K6BVZR5Q7;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/QianDaoDemo/Class/Main/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"DEVELOP=1",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/QiaoDaoDemo_dev-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/BaiduMapKit/BaiduMapKit/thirdlibs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyou.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2d3acbfb-91b7-42e4-abf7-b8d7c5300d7b";
+				PROVISIONING_PROFILE_SPECIFIER = cyouDemoTest_develop_profile_20201125;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96915AF3256E0A1700A4F0FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA538513FB5D2A978AD29E23 /* Pods-QianDaoDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QianDaoDemo/QianDaoDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5K6BVZR5Q7;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/QianDaoDemo/Class/Main/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"DEVELOP=1",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/QiaoDaoDemo_dev-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/BaiduMapKit/BaiduMapKit/thirdlibs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyou.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2d3acbfb-91b7-42e4-abf7-b8d7c5300d7b";
+				PROVISIONING_PROFILE_SPECIFIER = cyouDemoTest_develop_profile_20201125;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		96A5E8F6216C96DC00F24E8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -822,12 +1089,17 @@
 			baseConfigurationReference = 543D9083BE25421773652AB6 /* Pods-QianDaoDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = QianDaoDemo/Other/QianDaoDemo.entitlements;
+				CODE_SIGN_ENTITLEMENTS = QianDaoDemo/QianDaoDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5K6BVZR5Q7;
 				ENABLE_BITCODE = NO;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/QianDaoDemo/Main/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/QianDaoDemo/Class/Main/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"DEVELOP=0",
+				);
 				INFOPLIST_FILE = QianDaoDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -841,7 +1113,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cyou.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "2d3acbfb-91b7-42e4-abf7-b8d7c5300d7b";
-				PROVISIONING_PROFILE_SPECIFIER = cyouDemoTest_develop_profile_20191126;
+				PROVISIONING_PROFILE_SPECIFIER = cyouDemoTest_develop_profile_20201125;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -851,12 +1123,17 @@
 			baseConfigurationReference = BA538513FB5D2A978AD29E23 /* Pods-QianDaoDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = QianDaoDemo/Other/QianDaoDemo.entitlements;
+				CODE_SIGN_ENTITLEMENTS = QianDaoDemo/QianDaoDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5K6BVZR5Q7;
 				ENABLE_BITCODE = NO;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/QianDaoDemo/Main/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/QianDaoDemo/Class/Main/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"DEVELOP=0",
+				);
 				INFOPLIST_FILE = QianDaoDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -870,7 +1147,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cyou.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "2d3acbfb-91b7-42e4-abf7-b8d7c5300d7b";
-				PROVISIONING_PROFILE_SPECIFIER = cyouDemoTest_develop_profile_20191126;
+				PROVISIONING_PROFILE_SPECIFIER = cyouDemoTest_develop_profile_20201125;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -950,6 +1227,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		96915AF1256E0A1700A4F0FF /* Build configuration list for PBXNativeTarget "QianDaoDemo_dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96915AF2256E0A1700A4F0FF /* Debug */,
+				96915AF3256E0A1700A4F0FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		96A5E8C7216C96DA00F24E8B /* Build configuration list for PBXProject "QianDaoDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

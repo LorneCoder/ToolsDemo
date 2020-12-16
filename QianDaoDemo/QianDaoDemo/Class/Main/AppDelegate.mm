@@ -71,5 +71,25 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+//外部打开本应用
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
+{
+    NSLog(@"外部跳转回的url : %@", url);
+    //@"http://www.baidu.com?wd=pxd"];
+    //url.scheme获取url的协议
+    //url.host获取主机名
+    //url.relativePath 路径
+    //url.query 获取参数(就是查询字符串）
+    
+    NSString *qnrScheme = url.host;
+    NSURL *url2  = [NSURL URLWithString:[NSString stringWithFormat:@"%@://",qnrScheme]];
+    if (@available(iOS 10.0, *)) {
+        [[UIApplication sharedApplication] openURL:url2 options:@{UIApplicationOpenURLOptionUniversalLinksOnly: @NO} completionHandler:nil];
+    } else {
+        [[UIApplication sharedApplication] openURL:url2];
+    }
+
+    return YES;
+}
 
 @end

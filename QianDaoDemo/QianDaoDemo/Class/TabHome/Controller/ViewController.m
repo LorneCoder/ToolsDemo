@@ -22,6 +22,9 @@
 #import "AnimationController.h"
 #import "CYNTopView.h"
 #import "AppDelegate.h"
+#import "PayController.h"
+#import "CYNPrizeResultController.h"
+#import "JLAlertView.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -49,8 +52,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.dataArray = @[@"NFC", @"蓝牙", @"Loading DIY", @"添加桌面快捷方式", @"PhotoKit", @"蓝牙外设", @"钥匙串", @"远程H5加载本地资源", @"人脸检测", @"蓝牙打印机", @"字体设置", @"蓝牙门禁", @"动画效果"];
+    
+#if DEVELOP == 0
+    self.dataArray = @[@"NFC", @"蓝牙", @"Loading DIY", @"添加桌面快捷方式", @"PhotoKit", @"蓝牙外设", @"钥匙串", @"远程H5加载本地资源", @"人脸检测", @"蓝牙打印机", @"字体设置", @"蓝牙门禁", @"动画效果", @"支付", @"刮奖"];
+#elif DEVELOP == 1
+    self.dataArray = @[@"NFC"];
+#else
+#endif
+    
     [self initSubviews];
+    [self testEncodeURIComponent];
 }
 
 - (void)viewDidLayoutSubviews
@@ -66,7 +77,6 @@
     self.navigationItem.rightBarButtonItem = self.rightBarButton;
     [self.view addSubview:self.table];
 }
-
 
 #pragma mark -
 #pragma mark - tableView Delegate
@@ -95,8 +105,22 @@
 
 - (void)goSignInViewController
 {
-    SignInController *vc = [[SignInController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+    
+//    [JLAlertView show2021ThemeAlertWithTitle:nil message:@"\n确认报名本池吗？\n\n" cancel:@"取消" ok:@"确认" completion:^{
+//        NSLog(@"确认");
+//    } cancelCallback:^{
+//        NSLog(@"取消");
+//    }];
+    
+    [JLAlertView show2021ThemeAlertWithTitle:nil message:@"\n确认使用后悔药吗？\n使用后可更改一次奖池\n" cancel:@"取消" ok:@"确认" completion:^{
+        NSLog(@"确认");
+    } cancelCallback:^{
+        NSLog(@"取消");
+    }];
+    
+    
+    //SignInController *vc = [[SignInController alloc] init];
+    //[self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)showNextViewControllerWithIndexPath:(NSIndexPath *)indexPath
@@ -180,7 +204,18 @@
            [self.navigationController pushViewController:vc animated:YES];
            break;
         }
-            
+        case 13:
+        {//支付
+           PayController * vc = [[PayController alloc] init];
+           [self.navigationController pushViewController:vc animated:YES];
+           break;
+        }
+        case 14:
+        {//刮奖
+            CYNPrizeResultController * vc = [[CYNPrizeResultController alloc] init];
+           [self.navigationController pushViewController:vc animated:YES];
+           break;
+        }
         default:
             break;
     }
@@ -189,11 +224,7 @@
 - (void)addTest
 {
     NSArray *arr = @[@"1", @"2", @"3", @"4"];
-    
     NSString *str = [arr componentsJoinedByString:@","];
-    
-    
-    
     NSLog(@"str = %@", str);
     
     
@@ -214,6 +245,45 @@
 //    }
 }
 
+- (void)testEncodeURIComponent
+{
+    //NSString *targetStr = @"!*'();:@&=+$,/?%#[]";
+    NSString *targetStr = @"http://10.1.8.141:8080____erp____mobile____getCompletingCount.do**xxemail=gaojianlong%40cyou-inc.com";
+    
+    NSString *str0 = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL, (CFStringRef)targetStr, NULL, (CFStringRef)@"!*'();:@&=+$,/?%#[]", kCFStringEncodingUTF8));
+    NSLog(@"旧方法str0：%@", str0);
+
+    NSString *str1 = [targetStr stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+    NSLog(@"新方法str1：%@", str1);
+    
+    NSString *str2 = [targetStr stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLUserAllowedCharacterSet]];
+    NSLog(@"新方法str2：%@", str2);
+
+    NSString *str3 = [targetStr stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLPasswordAllowedCharacterSet]];
+    NSLog(@"新方法str3：%@", str3);
+
+    NSString *str4 = [targetStr stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]];
+    NSLog(@"新方法str4：%@", str4);
+
+    NSString *str5 = [targetStr stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLPathAllowedCharacterSet]];
+    NSLog(@"新方法str5：%@", str5);
+
+    NSString *str6 = [targetStr stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
+    NSLog(@"新方法str6：%@", str6);
+
+    NSString *str7 = [targetStr stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet characterSetWithCharactersInString:@""]];
+    NSLog(@"新方法str7：%@", str7);
+    
+    NSString *str8 = [targetStr stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet characterSetWithCharactersInString:@"!"]];
+    NSLog(@"新方法str8：%@", str8);
+    
+    NSString *str9 = [targetStr stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet symbolCharacterSet]];
+    NSLog(@"新方法str9：%@", str9);
+
+        
+    // !*'();:@&=+$,/?%#%5B%5D
+    // !*'();:@&=+$,/?%#[]
+}
 
 #pragma mark -
 #pragma mark - 懒加载

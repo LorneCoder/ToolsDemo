@@ -23,7 +23,9 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"远程H5加载本地资源";
     [self.view addSubview:self.webview];
+    
     [self loadRequest];
+    //[self loadTest];
 }
 
 - (void)viewDidLayoutSubviews
@@ -38,6 +40,13 @@
     [NSURLProtocol registerClass:[NSURLProtocolCustom class]];
     
     NSURL *url = [NSURL URLWithString:[[NSBundle mainBundle] pathForResource:@"index" ofType:@"html" inDirectory:@"GuidePageSource"]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [self.webview loadRequest:request];
+}
+
+- (void)loadTest
+{
+    NSURL *url = [NSURL URLWithString:@"https://meican.com/"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [self.webview loadRequest:request];
 }

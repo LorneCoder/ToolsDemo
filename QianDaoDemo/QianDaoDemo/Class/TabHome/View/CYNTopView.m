@@ -159,8 +159,20 @@
 {
     if (!_suspensionBtn) {
         _suspensionBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _suspensionBtn.backgroundColor = [UIColor orangeColor];
         [_suspensionBtn addTarget:self action:@selector(topViewClicked) forControlEvents:UIControlEventTouchUpInside];
+        [_suspensionBtn setImage:[UIImage imageNamed:@"animate0"] forState:UIControlStateNormal];
+        
+        NSMutableArray *imgArray = [NSMutableArray arrayWithCapacity:3];
+        for (int i = 0; i < 3; i++) {
+            NSString *imgName = [NSString stringWithFormat:@"animate%d", i];
+            UIImage *img = [UIImage imageNamed:imgName];
+            [imgArray addObject:img];
+        }
+        
+        _suspensionBtn.imageView.animationImages = imgArray;
+        _suspensionBtn.imageView.animationDuration = 1.0f;
+        _suspensionBtn.imageView.animationRepeatCount = 10000;
+        [_suspensionBtn.imageView startAnimating];
         
         //添加手势
         UIPanGestureRecognizer *panRcognize = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGesture:)];
