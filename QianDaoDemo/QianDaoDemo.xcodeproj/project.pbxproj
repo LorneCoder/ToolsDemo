@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3D608F60BA3D8B30B07A942F /* libPods-QianDaoDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA94CD4E3E8C4D19AF25221 /* libPods-QianDaoDemo.a */; };
+		961971AF259AC34D001F0821 /* BLEPrinterTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 961971AE259AC34D001F0821 /* BLEPrinterTool.m */; };
+		961971B0259AC34D001F0821 /* BLEPrinterTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 961971AE259AC34D001F0821 /* BLEPrinterTool.m */; };
 		961BCE5D2355AFB100E956E6 /* BLEPrinterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 961BCE5C2355AFB100E956E6 /* BLEPrinterController.m */; };
 		961FFD2222C0BA2800615C39 /* TTAlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 961FFD2122C0BA2800615C39 /* TTAlbumModel.m */; };
 		9626DEA022DC303500F7E9D6 /* BLEPeripheralsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9626DE9F22DC303500F7E9D6 /* BLEPeripheralsController.m */; };
@@ -18,6 +20,11 @@
 		967BEFC9256E72B9007E4B4D /* JLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 967BEFC2256E5F85007E4B4D /* JLAlertView.m */; };
 		9688229022BA312B0008C41A /* PhotoKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9688228F22BA312B0008C41A /* PhotoKitController.m */; };
 		968B434B2224EE1100799F16 /* BTConnectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968B434A2224EE1100799F16 /* BTConnectController.m */; };
+		968B8C0A2591984D003C7367 /* MyBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 968B8C072591984D003C7367 /* MyBase64.m */; };
+		968B8C0B2591984D003C7367 /* DES3EncryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 968B8C082591984D003C7367 /* DES3EncryptUtil.m */; };
+		968B8C122591CB13003C7367 /* EncryptController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968B8C112591CB13003C7367 /* EncryptController.m */; };
+		968B8C1B2591D741003C7367 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 968B8C1A2591D741003C7367 /* GTMBase64.m */; };
+		968B8C7A25958B00003C7367 /* PoetryWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 968B8C7525958AFE003C7367 /* PoetryWidget.intentdefinition */; };
 		968D4CAA2301725800A69A1D /* CacheWebviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D4CA92301725800A69A1D /* CacheWebviewController.m */; };
 		968D4CAD2301742700A69A1D /* NSURLProtocolCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D4CAC2301742700A69A1D /* NSURLProtocolCustom.m */; };
 		968D4CAF2302533300A69A1D /* GuidePageSource in Resources */ = {isa = PBXBuildFile; fileRef = 968D4CAE2302533300A69A1D /* GuidePageSource */; };
@@ -116,9 +123,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		968B8C3D25947FDE003C7367 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		543D9083BE25421773652AB6 /* Pods-QianDaoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QianDaoDemo.debug.xcconfig"; path = "Target Support Files/Pods-QianDaoDemo/Pods-QianDaoDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		8EA94CD4E3E8C4D19AF25221 /* libPods-QianDaoDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QianDaoDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		961971AD259AC34D001F0821 /* BLEPrinterTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLEPrinterTool.h; sourceTree = "<group>"; };
+		961971AE259AC34D001F0821 /* BLEPrinterTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLEPrinterTool.m; sourceTree = "<group>"; };
 		961BCE5B2355AFB100E956E6 /* BLEPrinterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLEPrinterController.h; sourceTree = "<group>"; };
 		961BCE5C2355AFB100E956E6 /* BLEPrinterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLEPrinterController.m; sourceTree = "<group>"; };
 		961FFD2022C0BA2800615C39 /* TTAlbumModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAlbumModel.h; sourceTree = "<group>"; };
@@ -137,6 +159,21 @@
 		9688228F22BA312B0008C41A /* PhotoKitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoKitController.m; sourceTree = "<group>"; };
 		968B43492224EE1100799F16 /* BTConnectController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTConnectController.h; sourceTree = "<group>"; };
 		968B434A2224EE1100799F16 /* BTConnectController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTConnectController.m; sourceTree = "<group>"; };
+		968B8C062591984D003C7367 /* DES3EncryptUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DES3EncryptUtil.h; sourceTree = "<group>"; };
+		968B8C072591984D003C7367 /* MyBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBase64.m; sourceTree = "<group>"; };
+		968B8C082591984D003C7367 /* DES3EncryptUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DES3EncryptUtil.m; sourceTree = "<group>"; };
+		968B8C092591984D003C7367 /* MyBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBase64.h; sourceTree = "<group>"; };
+		968B8C102591CB13003C7367 /* EncryptController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EncryptController.h; sourceTree = "<group>"; };
+		968B8C112591CB13003C7367 /* EncryptController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EncryptController.m; sourceTree = "<group>"; };
+		968B8C182591D741003C7367 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		968B8C192591D741003C7367 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		968B8C1A2591D741003C7367 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		968B8C2A25947FDD003C7367 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		968B8C2C25947FDD003C7367 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		968B8C7325958AFE003C7367 /* PoetryWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoetryWidget.swift; sourceTree = "<group>"; };
+		968B8C7525958AFE003C7367 /* PoetryWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = PoetryWidget.intentdefinition; sourceTree = "<group>"; };
+		968B8C7625958B00003C7367 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		968B8C7825958B00003C7367 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		968D4CA82301725800A69A1D /* CacheWebviewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CacheWebviewController.h; sourceTree = "<group>"; };
 		968D4CA92301725800A69A1D /* CacheWebviewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CacheWebviewController.m; sourceTree = "<group>"; };
 		968D4CAB2301742700A69A1D /* NSURLProtocolCustom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NSURLProtocolCustom.h; path = QianDaoDemo/Class/Controller/NSURLProtocolCustom.h; sourceTree = SOURCE_ROOT; };
@@ -258,9 +295,52 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		961971AC259AC310001F0821 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				961971AD259AC34D001F0821 /* BLEPrinterTool.h */,
+				961971AE259AC34D001F0821 /* BLEPrinterTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		968B8C052591984D003C7367 /* DES */ = {
+			isa = PBXGroup;
+			children = (
+				968B8C062591984D003C7367 /* DES3EncryptUtil.h */,
+				968B8C082591984D003C7367 /* DES3EncryptUtil.m */,
+				968B8C092591984D003C7367 /* MyBase64.h */,
+				968B8C072591984D003C7367 /* MyBase64.m */,
+			);
+			path = DES;
+			sourceTree = "<group>";
+		};
+		968B8C172591D741003C7367 /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				968B8C192591D741003C7367 /* GTMDefines.h */,
+				968B8C182591D741003C7367 /* GTMBase64.h */,
+				968B8C1A2591D741003C7367 /* GTMBase64.m */,
+			);
+			path = GTMBase64;
+			sourceTree = "<group>";
+		};
+		968B8C7225958AFE003C7367 /* PoetryWidget */ = {
+			isa = PBXGroup;
+			children = (
+				968B8C7325958AFE003C7367 /* PoetryWidget.swift */,
+				968B8C7525958AFE003C7367 /* PoetryWidget.intentdefinition */,
+				968B8C7625958B00003C7367 /* Assets.xcassets */,
+				968B8C7825958B00003C7367 /* Info.plist */,
+			);
+			path = PoetryWidget;
+			sourceTree = "<group>";
+		};
 		96915A90256E025000A4F0FF /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				968B8C172591D741003C7367 /* GTMBase64 */,
+				968B8C052591984D003C7367 /* DES */,
 				96915A91256E027500A4F0FF /* View */,
 				96DCE11021A6C96E00D69E95 /* Tools */,
 				96A5E90C216DF36100F24E8B /* Util */,
@@ -315,6 +395,7 @@
 				96A5E8CE216C96DA00F24E8B /* QianDaoDemo */,
 				96A5E8E7216C96DC00F24E8B /* QianDaoDemoTests */,
 				96A5E8F2216C96DC00F24E8B /* QianDaoDemoUITests */,
+				968B8C7225958AFE003C7367 /* PoetryWidget */,
 				96A5E8CD216C96DA00F24E8B /* Products */,
 				4BE889D052C60AB0AA8150F9 /* Pods */,
 				DE2160E559F6F67AEEC0D0E4 /* Frameworks */,
@@ -440,6 +521,7 @@
 		96E3C2F0237CF435004567B8 /* TabHome */ = {
 			isa = PBXGroup;
 			children = (
+				961971AC259AC310001F0821 /* Tool */,
 				96E3C2F1237CF445004567B8 /* Controller */,
 				96E3C2F2237CF44D004567B8 /* View */,
 				96E3C2F3237CF454004567B8 /* Model */,
@@ -486,6 +568,8 @@
 				96F88F1324C838120065CB3C /* AnimationController.m */,
 				9670301524E519BF0039D3D7 /* PayController.h */,
 				9670301624E519BF0039D3D7 /* PayController.m */,
+				968B8C102591CB13003C7367 /* EncryptController.h */,
+				968B8C112591CB13003C7367 /* EncryptController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -519,6 +603,8 @@
 				96A5E909216DEB1500F24E8B /* libcrypto.a */,
 				96A5E908216DEB1500F24E8B /* libssl.a */,
 				8EA94CD4E3E8C4D19AF25221 /* libPods-QianDaoDemo.a */,
+				968B8C2A25947FDD003C7367 /* WidgetKit.framework */,
+				968B8C2C25947FDD003C7367 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -554,6 +640,7 @@
 				96A5E8C9216C96DA00F24E8B /* Frameworks */,
 				96A5E8CA216C96DA00F24E8B /* Resources */,
 				31770DF9CC8963A5A53BE59D /* [CP] Copy Pods Resources */,
+				968B8C3D25947FDE003C7367 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -606,6 +693,7 @@
 		96A5E8C4216C96DA00F24E8B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = gaojianlong;
 				TargetAttributes = {
@@ -775,6 +863,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				961971B0259AC34D001F0821 /* BLEPrinterTool.m in Sources */,
 				967BEFC9256E72B9007E4B4D /* JLAlertView.m in Sources */,
 				96915AC3256E0A1700A4F0FF /* EditAddressController.m in Sources */,
 				96915AC4256E0A1700A4F0FF /* AnimationController.m in Sources */,
@@ -827,20 +916,26 @@
 				96E3C2E8237CEF49004567B8 /* CYNNavigationController.m in Sources */,
 				96A5E8D4216C96DA00F24E8B /* ViewController.m in Sources */,
 				96E3C2F6237D017B004567B8 /* CYNTopGifView.m in Sources */,
+				968B8C1B2591D741003C7367 /* GTMBase64.m in Sources */,
 				961BCE5D2355AFB100E956E6 /* BLEPrinterController.m in Sources */,
 				961FFD2222C0BA2800615C39 /* TTAlbumModel.m in Sources */,
 				96F88F1124C68F260065CB3C /* BLEClockInController.m in Sources */,
 				96995A5A21D4840700BAEC46 /* LoadingController.m in Sources */,
 				966BCF522174390700DE9EC2 /* BluetoothController.m in Sources */,
 				96A5E903216C98AC00F24E8B /* SignInController.m in Sources */,
+				961971AF259AC34D001F0821 /* BLEPrinterTool.m in Sources */,
 				96E3C2FC237E9694004567B8 /* CYNPrizeResultController.m in Sources */,
 				968D4CAD2301742700A69A1D /* NSURLProtocolCustom.m in Sources */,
 				96E3C2DD237A550E004567B8 /* FontSetController.m in Sources */,
+				968B8C122591CB13003C7367 /* EncryptController.m in Sources */,
 				9688229022BA312B0008C41A /* PhotoKitController.m in Sources */,
 				9648D99324A1A45200A668E0 /* UIView+Subviews.m in Sources */,
 				96E3C2F9237E9260004567B8 /* AppDelegate+Visible.m in Sources */,
 				96A5E8DF216C96DC00F24E8B /* main.m in Sources */,
 				96E2E38423580845003F1013 /* JLDataConvertUtil.m in Sources */,
+				968B8C0B2591984D003C7367 /* DES3EncryptUtil.m in Sources */,
+				968B8C7A25958B00003C7367 /* PoetryWidget.intentdefinition in Sources */,
+				968B8C0A2591984D003C7367 /* MyBase64.m in Sources */,
 				96E3C2E2237CEA6A004567B8 /* CYNTopView.m in Sources */,
 				96A5E907216DA03500F24E8B /* NFCController.m in Sources */,
 				96AB05592334B974004AB161 /* FaceCheckController.m in Sources */,

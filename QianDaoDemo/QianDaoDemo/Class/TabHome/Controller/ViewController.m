@@ -25,6 +25,7 @@
 #import "PayController.h"
 #import "CYNPrizeResultController.h"
 #import "JLAlertView.h"
+#import "EncryptController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -54,14 +55,14 @@
     [super viewDidLoad];
     
 #if DEVELOP == 0
-    self.dataArray = @[@"NFC", @"蓝牙", @"Loading DIY", @"添加桌面快捷方式", @"PhotoKit", @"蓝牙外设", @"钥匙串", @"远程H5加载本地资源", @"人脸检测", @"蓝牙打印机", @"字体设置", @"蓝牙门禁", @"动画效果", @"支付", @"刮奖"];
+    self.dataArray = @[@"NFC", @"蓝牙", @"Loading DIY", @"添加桌面快捷方式", @"PhotoKit", @"蓝牙外设", @"钥匙串", @"远程H5加载本地资源", @"人脸检测", @"蓝牙打印机", @"字体设置", @"蓝牙门禁", @"动画效果", @"支付", @"刮奖", @"3DES加解密"];
 #elif DEVELOP == 1
     self.dataArray = @[@"NFC"];
 #else
 #endif
     
     [self initSubviews];
-    [self testEncodeURIComponent];
+    //[self testEncodeURIComponent];
 }
 
 - (void)viewDidLayoutSubviews
@@ -213,6 +214,12 @@
         case 14:
         {//刮奖
             CYNPrizeResultController * vc = [[CYNPrizeResultController alloc] init];
+           [self.navigationController pushViewController:vc animated:YES];
+           break;
+        }
+        case 15:
+        {//加解密
+            EncryptController * vc = [[EncryptController alloc] init];
            [self.navigationController pushViewController:vc animated:YES];
            break;
         }
