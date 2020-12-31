@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)cyn_decryptBeaconWithRandom1:(NSString *)random1 random2:(NSString *)random2 byteArray:(NSArray *)array;
 
 ///1.2 授权打印机，APP下发数据给设备
-+ (NSArray<CBUUID *> *)cyn_sendDataToPrinterWithSN:(NSString *)deviceSN;
++ (NSArray<CBUUID *> *)cyn_sendDataToPrinterWithSN:(NSString *)deviceSN cardNumber:(NSArray *)cardArray;
 
 ///1.3 设备收到数据后应答，返回数据包，解析后返回状态码：0-失败，1-成功
 + (int)cyn_deviceReplyDecryptWithRandom1:(NSString *)random1 random2:(NSString *)random2 byteArray:(NSArray *)array;

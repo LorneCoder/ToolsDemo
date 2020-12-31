@@ -113,9 +113,9 @@ int HexToAscii(unsigned char *pHexStr,unsigned char *pAscStr,int Len)
     NSString *nLetterValue;
     NSString *str =@"";
     long long int ttmpig;
-    for (int i = 0; i<9; i++) {
-        ttmpig=tmpid%16;
-        tmpid=tmpid/16;
+    for (int i = 0; i < 9; i++) {
+        ttmpig = tmpid % 16;
+        tmpid = tmpid / 16;
         switch (ttmpig)
         {
             case 10:

@@ -18,9 +18,9 @@
 ///配置秘钥
 + (NSArray<CBUUID *> *)configSecretKey:(NSString *)deviceSN
 {
-    //加密随机数
-    int ran1 = rand()%255;
-    int ran2 = rand()%255;
+    //加密随机数[16,255)
+    int ran1 = arc4random() % 239 + 16;
+    int ran2 = arc4random() % 239 + 16;
     NSLog(@"ran1 : %d, ran2 : %d", ran1, ran2);
     NSString *ranStr1 = [JLDataConvertUtil intToHex:ran1];
     NSString *ranStr2 = [JLDataConvertUtil intToHex:ran2];
@@ -48,7 +48,6 @@
                        [CBUUID UUIDWithString:@"0403"],
                        [CBUUID UUIDWithString:@"0605"]];
     NSLog(@"加密前的数据：%@", array);
-
     //加密
     NSString *str = [self cyn_setSecretKeyEncryptWithRandom1:ranStr1 random2:ranStr2 byteArray:array];
     NSLog(@"加密后的数据：%@", str);
@@ -165,11 +164,11 @@
 }
 
 ///1.2 授权打印机，APP下发数据给设备
-+ (NSArray<CBUUID *> *)cyn_sendDataToPrinterWithSN:(NSString *)deviceSN
++ (NSArray<CBUUID *> *)cyn_sendDataToPrinterWithSN:(NSString *)deviceSN cardNumber:(NSArray *)cardArray
 {
-    //加密随机数
-    int ran1 = rand()%255;
-    int ran2 = rand()%255;
+    //加密随机数[16,255)
+    int ran1 = arc4random() % 239 + 16;
+    int ran2 = arc4random() % 239 + 16;
     NSLog(@"ran1 : %d, ran2 : %d", ran1, ran2);
     NSString *ranStr1 = [JLDataConvertUtil intToHex:ran1];
     NSString *ranStr2 = [JLDataConvertUtil intToHex:ran2];
@@ -177,30 +176,30 @@
     NSString *byte2 = [ranStr2 stringByAppendingString:ranStr1];
     NSLog(@"随机数UUID：%@", byte2);
     
-    // 2019 0722 0031
+    // eg：2019 0722 0031
     NSString *sn1 = [self reverseString:[deviceSN substringWithRange:NSMakeRange(0, 4)]];
     NSString *sn2 = [self reverseString:[deviceSN substringWithRange:NSMakeRange(4, 4)]];
     NSString *sn3 = [self reverseString:[deviceSN substringWithRange:NSMakeRange(8, 4)]];
     
-    // 员工卡号密文
-    // 5B 22 D2 61 2D B4 4A A6 8B 85 91 73 36 E6 5D 40
-    //加密随机数后边的数据
-    NSArray *array = @[[CBUUID UUIDWithString:sn1],
-                       [CBUUID UUIDWithString:sn2],
-                       [CBUUID UUIDWithString:sn3],
-                       [CBUUID UUIDWithString:@"225B"],
-                       [CBUUID UUIDWithString:@"61D2"],
-                       [CBUUID UUIDWithString:@"B42D"],
-                       [CBUUID UUIDWithString:@"A64A"],
-                       [CBUUID UUIDWithString:@"858B"],
-                       [CBUUID UUIDWithString:@"7391"],
-                       [CBUUID UUIDWithString:@"E636"],
-                       [CBUUID UUIDWithString:@"405D"]];
-    
-    NSLog(@"加密前的数据：%@", array);
+    //加密随机数后边的数据（设备序列号、员工卡号密文）
+    //构造待加密数据集
+    NSMutableArray *targetArray = [NSMutableArray arrayWithObjects:
+                                   [CBUUID UUIDWithString:sn1],
+                                   [CBUUID UUIDWithString:sn2],
+                                   [CBUUID UUIDWithString:sn3],
+                                   nil];
+    //员工卡号密文数组
+    //eg：cardArray = @[@"5B", @"22", @"D2", @"61", @"2D", @"B4", @"4A", @"A6", @"8B", @"85", @"91", @"73", @"36", @"E6", @"5D", @"40"]
+    for (int i = 0; i < cardArray.count; i+=2) {
+        NSString *str1 = cardArray[i];
+        NSString *str2 = cardArray[i + 1];
+        NSString *result = [str2 stringByAppendingString:str1];
+        NSLog(@"i = %d, result : %@", i, result);
+        [targetArray addObject:[CBUUID UUIDWithString:result]];
+    }
+    NSLog(@"加密前的数据：%@", targetArray);
     //加密
-    
-    NSString *str = [self cyn_sendDataToPrinterWithRandom1:ranStr1 random2:ranStr2 byteArray:array];
+    NSString *str = [self cyn_sendDataToPrinterWithRandom1:ranStr1 random2:ranStr2 byteArray:targetArray];
     NSLog(@"加密后的数据：%@", str);
     
     NSString *uuid1 = [str substringWithRange:NSMakeRange(0, 4)];

@@ -11,6 +11,8 @@
 		961971AF259AC34D001F0821 /* BLEPrinterTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 961971AE259AC34D001F0821 /* BLEPrinterTool.m */; };
 		961971B0259AC34D001F0821 /* BLEPrinterTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 961971AE259AC34D001F0821 /* BLEPrinterTool.m */; };
 		961BCE5D2355AFB100E956E6 /* BLEPrinterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 961BCE5C2355AFB100E956E6 /* BLEPrinterController.m */; };
+		961FF7DB259C1DE2007DEC3B /* SetPrinterSecretKeyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 961FF7DA259C1DE2007DEC3B /* SetPrinterSecretKeyController.m */; };
+		961FF7DC259C1DE2007DEC3B /* SetPrinterSecretKeyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 961FF7DA259C1DE2007DEC3B /* SetPrinterSecretKeyController.m */; };
 		961FFD2222C0BA2800615C39 /* TTAlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 961FFD2122C0BA2800615C39 /* TTAlbumModel.m */; };
 		9626DEA022DC303500F7E9D6 /* BLEPeripheralsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9626DE9F22DC303500F7E9D6 /* BLEPeripheralsController.m */; };
 		9648D99324A1A45200A668E0 /* UIView+Subviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 9648D99224A1A45200A668E0 /* UIView+Subviews.m */; };
@@ -143,6 +145,8 @@
 		961971AE259AC34D001F0821 /* BLEPrinterTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLEPrinterTool.m; sourceTree = "<group>"; };
 		961BCE5B2355AFB100E956E6 /* BLEPrinterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLEPrinterController.h; sourceTree = "<group>"; };
 		961BCE5C2355AFB100E956E6 /* BLEPrinterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLEPrinterController.m; sourceTree = "<group>"; };
+		961FF7D9259C1DE2007DEC3B /* SetPrinterSecretKeyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetPrinterSecretKeyController.h; sourceTree = "<group>"; };
+		961FF7DA259C1DE2007DEC3B /* SetPrinterSecretKeyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetPrinterSecretKeyController.m; sourceTree = "<group>"; };
 		961FFD2022C0BA2800615C39 /* TTAlbumModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAlbumModel.h; sourceTree = "<group>"; };
 		961FFD2122C0BA2800615C39 /* TTAlbumModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAlbumModel.m; sourceTree = "<group>"; };
 		9626DE9E22DC303500F7E9D6 /* BLEPeripheralsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLEPeripheralsController.h; sourceTree = "<group>"; };
@@ -570,6 +574,8 @@
 				9670301624E519BF0039D3D7 /* PayController.m */,
 				968B8C102591CB13003C7367 /* EncryptController.h */,
 				968B8C112591CB13003C7367 /* EncryptController.m */,
+				961FF7D9259C1DE2007DEC3B /* SetPrinterSecretKeyController.h */,
+				961FF7DA259C1DE2007DEC3B /* SetPrinterSecretKeyController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -886,6 +892,7 @@
 				96915AD5256E0A1700A4F0FF /* FontSetController.m in Sources */,
 				96915AD6256E0A1700A4F0FF /* PhotoKitController.m in Sources */,
 				96915AD7256E0A1700A4F0FF /* UIView+Subviews.m in Sources */,
+				961FF7DC259C1DE2007DEC3B /* SetPrinterSecretKeyController.m in Sources */,
 				96915AD8256E0A1700A4F0FF /* AppDelegate+Visible.m in Sources */,
 				96915AD9256E0A1700A4F0FF /* main.m in Sources */,
 				96915ADA256E0A1700A4F0FF /* JLDataConvertUtil.m in Sources */,
@@ -941,6 +948,7 @@
 				96AB05592334B974004AB161 /* FaceCheckController.m in Sources */,
 				968B434B2224EE1100799F16 /* BTConnectController.m in Sources */,
 				96A5E8D1216C96DA00F24E8B /* AppDelegate.mm in Sources */,
+				961FF7DB259C1DE2007DEC3B /* SetPrinterSecretKeyController.m in Sources */,
 				967BEFC4256E5F86007E4B4D /* JLAlertView.m in Sources */,
 				968D4CAA2301725800A69A1D /* CacheWebviewController.m in Sources */,
 				96A5E91C2170433800F24E8B /* AddressCell.m in Sources */,
