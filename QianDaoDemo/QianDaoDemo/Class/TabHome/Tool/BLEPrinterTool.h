@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 ///配置秘钥
 + (NSArray<CBUUID *> *)configSecretKey:(NSString *)deviceSN;
 
+///配置秘钥后，解析设备应答返回的数据包
++ (NSString *)cyn_secretKeyConfigReplyWithRandom1:(NSString *)random1 random2:(NSString *)random2 byteArray:(NSArray *)array;
 
 #pragma mark - 客户端与蓝牙打印机交互
 

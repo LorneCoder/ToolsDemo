@@ -123,6 +123,24 @@
         NSLog(@"外设name：%@", peripheral.name);
         NSLog(@"外设advertisementData：%@", advertisementData);
         
+        //获取两个随机数
+        NSString *tempStr = [kCBAdvDataServiceUUIDs[1] UUIDString];
+        NSString *randomNum1 = [tempStr substringWithRange:NSMakeRange(2, 2)];
+        NSString *randomNum2 = [tempStr substringWithRange:NSMakeRange(0, 2)];
+        NSLog(@"随机数1：%@ ---- 随机数2：%@", randomNum1, randomNum2);
+
+        //取出广播包的后22个字节，剔除前两个元素，取出后11个元素
+        NSArray *arr = [kCBAdvDataServiceUUIDs subarrayWithRange:NSMakeRange(2, kCBAdvDataServiceUUIDs.count - 2)];
+        NSString *sn = [self cyn_parsePrinterReplyDataWithRandom1:randomNum1 random2:randomNum2 byteArray:arr];
+        
+        if ([self.dataArray containsObject:sn]) {
+            [self.dataArray removeObject:sn];
+            [self.table reloadData];
+            [SVProgressHUD showSuccessWithStatus:@"配置成功"];
+        } else {
+            return;
+        }
+        
     } else {
         
     }
@@ -186,6 +204,13 @@
     [self.peripheralManager startAdvertising:@{CBAdvertisementDataServiceUUIDsKey:arr}];
 }
 
+///配置秘钥后，解析设备应答返回的数据包
+- (NSString *)cyn_parsePrinterReplyDataWithRandom1:(NSString *)random1 random2:(NSString *)random2 byteArray:(NSArray *)array
+{
+    NSString *SN = [BLEPrinterTool cyn_secretKeyConfigReplyWithRandom1:random1 random2:random2 byteArray:array];
+    return SN;
+}
+
 #pragma mark -
 #pragma mark - tableView Delegate
 
@@ -212,7 +237,7 @@
     
     __weak typeof(SetPrinterSecretKeyController *) weakSelf = self;
     //点击对应的蓝牙打印机设备，进行授权
-    [self showAlertWithMessae:[NSString stringWithFormat:@"确定授权打印机：%@", SN] okTitle:@"确定" cancelTitle:@"取消" okBlock:^{
+    [self showAlertWithMessae:[NSString stringWithFormat:@"确定为该打印机配置秘钥：%@", SN] okTitle:@"确定" cancelTitle:@"取消" okBlock:^{
         //确定授权
         self.replyCode = 0;//每次授权的时候将状态码置零
         NSLog(@"将秘钥加密后发给打印机");

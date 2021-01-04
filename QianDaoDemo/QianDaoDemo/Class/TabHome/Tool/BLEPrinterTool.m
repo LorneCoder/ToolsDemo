@@ -82,6 +82,82 @@
     return resultArr;
 }
 
+///配置秘钥后，解析设备应答返回的数据包
++ (NSString *)cyn_secretKeyConfigReplyWithRandom1:(NSString *)random1 random2:(NSString *)random2 byteArray:(NSArray *)array
+{
+    //16位秘钥
+    uint8_t device_beacon_encodeKey[16] = {0xF3, 0x78, 0x6D, 0x3F, 0xA7, 0x56, 0x9B, 0x37, 0x6C, 0x3D, 0x91, 0x8E, 0xE5, 0x98, 0xD3, 0xBC};
+    uint8_t temp_key[16] = {0};
+    
+    //字符串转换成16进制
+    NSData *data1 = [JLDataConvertUtil hexToBytes:random1];
+    NSData *data2 = [JLDataConvertUtil hexToBytes:random2];
+    
+    //16进制转换成uint8_t
+    uint8_t ran1 = [JLDataConvertUtil uint8FromBytes:data1];
+    uint8_t ran2 = [JLDataConvertUtil uint8FromBytes:data2];
+        
+    for (uint8_t j=0; j<16; j++)
+    {
+        temp_key[j] = device_beacon_encodeKey[j];
+        temp_key[j] = temp_key[j] ^ ran1;
+        temp_key[j] = temp_key[j] ^ ran2;
+    }
+    
+    //此时的 temp_key[16] 就是二次新秘钥
+    //用二次新秘钥对数组中的8个字节进行解密，前6个字节代表设备序列号，倒数第二个字节是状态码
+
+    uint8_t p_data[31] = {0};
+    uint8_t plen = 0;
+    
+    //beacon头，5字节，固定内容
+    p_data[plen++] = 0x02;
+    p_data[plen++] = 0x01;
+    p_data[plen++] = 0x04;
+    p_data[plen++] = 0x1B;
+    p_data[plen++] = 0xFF;
+    
+    p_data[plen++] = 0x5A;//包头
+    p_data[plen++] = 0x63;//功能码
+    p_data[plen++] = ran1;//随机数1
+    p_data[plen++] = ran2;//随机数2
+    
+    for (int i = 0; i < array.count; i ++) {
+        NSString *tempStr = [array[i] UUIDString];
+        NSString *temp1 = [tempStr substringWithRange:NSMakeRange(2, 2)];
+        NSString *temp2 = [tempStr substringWithRange:NSMakeRange(0, 2)];
+
+        NSData *d1 = [JLDataConvertUtil hexToBytes:temp1];
+        NSData *d2 = [JLDataConvertUtil hexToBytes:temp2];
+            
+        uint8_t byte1 = [JLDataConvertUtil uint8FromBytes:d1];
+        uint8_t byte2 = [JLDataConvertUtil uint8FromBytes:d2];
+        
+        p_data[plen++] = byte1;
+        p_data[plen++] = byte2;
+    }
+    
+    //加解密函数
+    cyn_beacon_encodeMassage(temp_key, &p_data[9], 22);
+    
+    uint8_t sn_data[6] = {0};
+    uint8_t sn_ascii[6] = {0};//ASCII码值格式的容器
+    
+    for (int i = 0; i < 6; i ++) {
+        sn_data[i] = p_data[i + 9]; //p_datap[31] 第9~14位字节对应设备序列号，取出备用
+    }
+    
+    NSLog(@"sn_data:%s", sn_data);
+    //16进制转换ASCII码值
+    HexToAscii(sn_data, sn_ascii, 6);
+    // ascii_data的值就是设备序列号
+    NSLog(@"转换后的序列号：%s", sn_ascii);
+    NSString *SN = [NSString stringWithFormat:@"%s", sn_ascii];
+    NSLog(@"设备序列号：%@", SN);
+    
+    return SN;
+}
+
 #pragma mark - 客户端与蓝牙打印机交互
 
 ///1.1 获取打印机beacon，解析后返回设备序列号
